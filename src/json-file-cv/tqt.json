@@ -1,0 +1,122 @@
+{
+    "personal_info": {
+        "full_name": "Tran Quoc Toan",
+        "situation": "Web Development",
+        "date_of_birth": "19/09/2001",
+        "address": "Thu Duc District, Ho Chi Minh City, Vietnam",
+        "phone": "0334243923",
+        "email": "toanquoctran190901@gmail.com",
+        "linkin": "https://www.linkedin.com/in/trqutn",
+        "github": "https://github.com/TrQuTo",
+        "avt": "img/avt-cv-tqt.jpg"
+    },
+    "objective": {
+        "content": "I am a software developer with nearly 1 year of experience in the .NET field, involved in developing and deploying business management applications using ASP.NET MVC, WebForm, WinForm and Devexpress. I am passionate about learning and would like to find an opportunity to work in a dynamic environment where I can apply my skills in developing high quality software applications and bringing company value, as well as continue to learn to develop yourself better every day."
+    },
+    "education": [
+        {
+            "institution": "Software Technology Center - Can Tho University",
+            "major": "Programmer - Aptech",
+            "duration": "08/2019 - 07/2023",
+            "summary": "Have a solid foundation in programming from front end to backend, web to application"
+        }
+    ],
+    "work_experience": [
+        {
+            "company": "Individuals System (IVS)",
+            "position": "Fresher",
+            "duration": "11/2023 - 04/2024",
+            "job_description":
+            {
+                "desc1": "Build Web with ASP.NET MVC",
+                "desc2": "Backend: Participate in writing api",
+                "desc3": "Fontend: Build UI with Devexpress, Fix UI bugs",
+                "desc4": "Code follows MVC model and API written according to OOP standards"
+            }
+
+        },
+        {
+            "company": "Individuals System (IVS)",
+            "position": "Intern",
+            "duration": "07/2023 - 11/2023",
+            "job_description":
+            {
+                "desc1": "Convert Winform application to Webform using .NET"
+            }
+
+        },
+        {
+            "company": "CUSC",
+            "position": "Semester 4 project",
+            "duration": "09/2022 - 12/2022",
+            "job_description":
+            {
+                "desc1": "Build a website selling clothes using Java Spring MVC",
+                "desc2": "https://github.com/TrQuTo/ShopJava"
+            }
+
+        }
+    ],
+    "skills": [
+        {
+            "title_skills": "Backend",
+            "description_skills": [
+                {
+                    "name_skills": ".NET",
+                    "description_skills":
+                    {
+                        "desc_s1": "Entity Framework",
+                        "desc_s2": "Rest API: Define APIs according to RESTful API standards and write OOP standard code to manipulate data returned to the client",
+                        "desc_s3": "ASP.NET"
+                    }
+                }
+            ]
+        },
+        {
+            "title_skills": "Fontend",
+            "description_skills": [
+                {
+                    "name_skills": "Devexpress",
+                    "description_skills":
+                    {
+                        "desc_s1": "DevExpress WPF: Build interfaces with controls such as: GridView, Combobox, Card,..."
+                    }
+
+                }
+            ]
+        },
+        {
+            "title_skills": "Source Management",
+            "description_skills": [
+                {
+                    "name_skills": "GIT",
+                    "description_skills": 
+                    {
+                        "desc_s1": "Know basic tasks with GIT.",
+                        "desc_s2": "Know how to handle conflict.",
+                        "desc_s3": "High-performance task: Cherry-pick, Revert,..."
+                    }
+                }
+            ]
+        },
+        {
+            "title_skills": "English",
+            "description_skills": [
+                {
+                    "name_skills": "Conversations",
+                    "description_skills": 
+                    {
+                        "desc_s1": "Daily communication.",
+                        "desc_s2": "Study documents in English."
+                    }
+                }
+            ]
+        }
+    ],
+    "interests": [
+        "Research new technology",
+        "Reading books",
+        "Playing sports",
+        "Traveling"
+    ]
+}
