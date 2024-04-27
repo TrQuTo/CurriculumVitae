@@ -1,5 +1,5 @@
 <template>
-  <TqtoanCV msg="Welcome to Your Vue.js App"/>
+  <TqtoanCV />
 </template>
 
 <script>
@@ -9,14 +9,16 @@ export default {
   name: 'App',
   components: {
     TqtoanCV
-  }
+  },
+  mounted() {
+    document.title = "CV - Tran Quoc Toan";
+  },
 }
 
 </script>
 
 <style>
-
-body{
+body {
   text-align: -webkit-center;
   color: black;
   font-family: Calibri;
