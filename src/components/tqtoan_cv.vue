@@ -235,7 +235,7 @@ export default {
         "email": "toanquoctran190901@gmail.com",
         "linkin": "https://www.linkedin.com/in/trqutn",
         "github": "https://github.com/TrQuTo",
-        "avt": "../assets/img/avt-cv-tqt.jpg"
+        "avt": require("../assets/img/avt-cv-tqt.jpg")
       },
       "objective": {
         "content": "As a software programmer with nearly 1 year of experience in the field of developing applications and websites to manage restaurant, business and factory systems. I participate in projects following models such as: Agile Scrum, Horenso Rule, 5h1w. With the spirit of eager to learn and always train myself, I hope to find a dynamic working environment that can help me improve my professional skills and English."
@@ -408,12 +408,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-body{
-  text-align: -webkit-center;
-  color: black;
-  font-family: Calibri;
-  background-image: url("../assets/img/backgroud-cv.png");
-}
 
 .table-responsive{
   width: 862px;

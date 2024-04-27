@@ -15,7 +15,11 @@ export default {
 </script>
 
 <style>
-#app {
 
+body{
+  text-align: -webkit-center;
+  color: black;
+  font-family: Calibri;
+  background-image: url("assets/img/backgroud-cv.png");
 }
 </style>
