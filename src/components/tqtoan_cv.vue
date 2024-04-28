@@ -250,7 +250,7 @@ export default {
 
         {
           "institution": "English center D2D Toeic",
-          "major": "Communicate",
+          "major": "Conversations",
           "duration": "02/2024 - 04/2024",
           "summary": "Daily communication"
         }
@@ -361,10 +361,10 @@ export default {
           "title_skills": "English",
           "description_skills": [
             {
-              "name_skills": "Conversations",
+              "name_skills": "Communication",
               "description_skills":
               {
-                "desc_s1": "Daily communication.",
+                "desc_s1": "Daily Conversations.",
                 "desc_s2": "Study documents in English."
               }
             }
