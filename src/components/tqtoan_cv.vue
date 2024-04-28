@@ -71,7 +71,7 @@
         <tr>
           <td colspan="3">
             <div class="line-title">
-              <a class="title">OBJECTIVE</a>
+              <a class="title">{{ $t('objective') }}</a>
             </div>
             <p>
               {{ cv_tqtoan.objective.content }}
@@ -86,7 +86,7 @@
         <tr>
           <td colspan="3">
             <div class="line-title">
-              <a class="title">WORK EXPERIENCE</a>
+              <a class="title">{{ $t('work-experience') }}</a>
             </div>
           </td>
         </tr>
@@ -134,7 +134,7 @@
                 <tr>
                   <td class="field" style="width: 270px;">
                     <div class="line-title">
-                      <a class="title">EDUCATION</a>
+                      <a class="title">{{ $t('education') }}</a>
                     </div>
                   </td>
                   <td style="width: 20px;">
@@ -142,7 +142,7 @@
                   </td>
                   <td>
                     <div class="line-title">
-                      <a class="title">SKILLS</a>
+                      <a class="title">{{ $t('skills') }}</a>
                     </div>
                   </td>
                 </tr>
@@ -477,6 +477,7 @@ height: auto;
 
 .title{
   font-size: 22px;
+  text-transform: uppercase;
 }
 
 .dot{
