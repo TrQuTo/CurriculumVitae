@@ -1,10 +1,10 @@
 <template>
-  <div class="select">
+  <!-- <div class="select">
     <select class="language" name="Languages" title="Languages">
       <option style="background-image:url(assets/img/add-circle-outline.svg)" title="Vietnam" name="Vietnam" value="langVN"><span>Việt nam</span></option>
       <option style="background-image:url(assets/img/add-circle-outline.svg)" title="English" name="English" value="langEN"><span>English</span></option>
     </select>
-  </div>
+  </div> -->
   <div class="table-responsive">
     <table id="info-cv" class="table table-primary">
       <tbody v-if="cvLoaded">
