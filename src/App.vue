@@ -1,20 +1,19 @@
 <template>
-  <TqtoanCV />
+  <home_page />
 </template>
 
 <script>
-import TqtoanCV from './components/tqtoan_cv.vue'
+import home_page from "./components/home_page/home_page.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    TqtoanCV
+    home_page,
   },
   mounted() {
     document.title = "CV - Tran Quoc Toan";
   },
-}
-
+};
 </script>
 
 <style>
