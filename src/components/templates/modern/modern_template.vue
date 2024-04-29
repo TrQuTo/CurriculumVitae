@@ -1,8 +1,10 @@
 <template>
-    <div>NOT FOUND</div>
-  </template>
+    <div>
+        Modern Template
+    </div>
+</template>
 <script>
-export default {
-    name: 'modern_template',
-}
+    export default {
+        name: 'modern_template'
+    }
 </script>
