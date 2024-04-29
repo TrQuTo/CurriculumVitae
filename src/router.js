@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-
 import home_page from "./components/home_page/home_page.vue";
 import basic_template from "./components/templates/basic/basic_template.vue";
+import modern_template from './components/templates/modern/modern_template';
 import not_found from './components/not_found/not_found.vue';
 
 const routes = [
@@ -13,6 +13,10 @@ const routes = [
     {
         path: '/basic_template',
         component: basic_template
+    },
+    {
+        path: '/modern_template',
+        component: modern_template
     },
     {
         path: '/:catchAll(.*)',

@@ -1,15 +1,12 @@
 <template>
-  <home_page />
+  <main>
+    <RouterView />
+  </main>
 </template>
 
 <script>
-import home_page from "./components/home_page/home_page.vue";
-
 export default {
   name: "App",
-  components: {
-    home_page,
-  },
   mounted() {
     document.title = "CV - Tran Quoc Toan";
   },

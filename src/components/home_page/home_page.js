@@ -1,4 +1,3 @@
-
 export default {
-    name: "HomePage",
-  };
+  name: "home_page",
+};
