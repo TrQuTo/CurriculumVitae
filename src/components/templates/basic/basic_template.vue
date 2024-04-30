@@ -1,10 +1,4 @@
 <template>
-  <!-- <div class="select">
-    <select class="language" name="Languages" title="Languages">
-      <option style="background-image:url(assets/img/add-circle-outline.svg)" title="Vietnam" name="Vietnam" value="langVN"><span>Việt nam</span></option>
-      <option style="background-image:url(assets/img/add-circle-outline.svg)" title="English" name="English" value="langEN"><span>English</span></option>
-    </select>
-  </div> -->
   <div class="table-responsive">
     <table id="info-cv" class="table table-primary">
       <tbody v-if="cvLoaded">
@@ -31,7 +25,7 @@
             <a>
               <img
                 class="icon"
-                src="../assets/img/calendar.svg"
+                src="@/assets/img/calendar.svg"
                 alt="mail-icon"
               />
             </a>
@@ -44,7 +38,7 @@
               <a>
                 <img
                   class="icon"
-                  src="../assets/img/call.svg"
+                  src="@/assets/img/call.svg"
                   alt="phone-number-icon"
                 />
               </a>
@@ -55,7 +49,7 @@
             <a>
               <img
                 class="icon"
-                src="../assets/img/location.svg"
+                src="@/assets/img/location.svg"
                 alt="location-icon"
               />
             </a>
@@ -65,7 +59,7 @@
         <tr class="fontsize">
           <td style="width: 250px">
             <a>
-              <img class="icon" src="../assets/img/mail.svg" alt="mail-icon" />
+              <img class="icon" src="@/assets/img/mail.svg" alt="mail-icon" />
             </a>
             <span class="content">{{ cv_tqtoan.personal_info.email }}</span>
           </td>
@@ -73,7 +67,7 @@
             <a>
               <img
                 class="icon"
-                src="../assets/img/logo-github.svg"
+                src="@/assets/img/logo-github.svg"
                 alt="location-icon"
               />
             </a>
@@ -83,7 +77,7 @@
             <a>
               <img
                 class="icon"
-                src="../assets/img/logo-linkedin.svg"
+                src="@/assets/img/logo-linkedin.svg"
                 alt="mail-icon"
               />
             </a>
@@ -130,7 +124,7 @@
                       <a
                         ><img
                           class="dot"
-                          src="../assets/img/ellipse-outline.svg"
+                          src="@/assets/img/ellipse-outline.svg"
                           alt="big-dot"
                       /></a>
                     </td>
@@ -173,7 +167,7 @@
                     <a
                       ><img
                         class="dot"
-                        src="../assets/img/ellipse-outline.svg"
+                        src="@/assets/img/ellipse-outline.svg"
                         alt="big-dot"
                     /></a>
                   </td>
@@ -290,10 +284,14 @@
   </div>
 </template>
 
-<script src="./tqtoan_cv.js" type="text/javascript"></script>
+<script src="./basic_template.js" type="text/javascript"></script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+table, tbody, tr, td, a {
+  color: black;
+  text-decoration: none;
+}
 .table-responsive {
   width: 862px;
   border-radius: 10px;
@@ -304,9 +302,10 @@
   background-color: white;
 }
 
-.table {
+.table>:not(caption)>*>* {
   border: 1px;
   background-color: white;
+  padding: unset;
 }
 
 .avt {

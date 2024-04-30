@@ -1,23 +1,23 @@
 <template>
-  <TqtoanCV />
+  <main>
+    <RouterView />
+  </main>
 </template>
 
 <script>
-import TqtoanCV from './components/tqtoan_cv.vue'
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap";
 export default {
-  name: 'App',
-  components: {
-    TqtoanCV
-  },
+  name: "App",
   mounted() {
     document.title = "CV - Tran Quoc Toan";
   },
-}
-
+};
 </script>
 
 <style>
+
+
 body {
   text-align: -webkit-center;
   color: black;

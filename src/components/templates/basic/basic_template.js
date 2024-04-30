@@ -1,6 +1,6 @@
 
 export default {
-    name: "TqtoanCV",
+    name: "basic_template",
     el: "#info-cv",
     data() {
       return {
@@ -15,7 +15,7 @@ export default {
             email: "toanquoctran190901@gmail.com",
             linkin: "https://www.linkedin.com/in/trqutn",
             github: "https://github.com/TrQuTo",
-            avt: require("../assets/img/avt-cv-tqt.jpg"),
+            avt: require("@/assets/img/avt-cv-tqt.jpg"),
           },
           objective: {
             content:
