@@ -288,9 +288,44 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-table, tbody, tr, td, a {
+table,
+tbody,
+tr,
+td,
+a {
   color: black;
   text-decoration: none;
+}
+table {
+  caption-side: unset;
+  border-collapse: unset;
+}
+*,
+::after,
+::before {
+  box-sizing: unset;
+}
+hr {
+  margin: unset;
+  color: unset;
+  border: unset;
+  border-top: unset;
+  opacity: unset;
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+}
+p {
+  margin-top: 15px;
+}
+a {
+  vertical-align: unset !important;
 }
 .table-responsive {
   width: 862px;
@@ -302,7 +337,7 @@ table, tbody, tr, td, a {
   background-color: white;
 }
 
-.table>:not(caption)>*>* {
+.table > :not(caption) > * > * {
   border: 1px;
   background-color: white;
   padding: unset;
@@ -388,7 +423,7 @@ table, tbody, tr, td, a {
 }
 
 .work-exp .line {
-  padding-left: 8px;
+  padding-left: 7px;
 }
 
 .work-exp .time {
@@ -432,5 +467,9 @@ a:active {
 .skills ul {
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+.skills{
+  padding-top: 9px !important;
 }
 </style>

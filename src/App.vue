@@ -10,7 +10,7 @@ import "bootstrap";
 export default {
   name: "App",
   mounted() {
-    document.title = "CV - Tran Quoc Toan";
+    document.title = "CurriculumVitea";
   },
 };
 </script>
