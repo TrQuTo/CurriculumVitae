@@ -1,6 +1,6 @@
 <template>
   <main>
-    <RouterView />
+    <RouterView/>
   </main>
 </template>
 
@@ -11,13 +11,11 @@ export default {
   name: "App",
   mounted() {
     document.title = "CurriculumVitea";
-  },
+  }
 };
 </script>
 
 <style>
-
-
 body {
   text-align: -webkit-center;
   color: black;
