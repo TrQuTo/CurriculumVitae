@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap";
 export default {
   name: "App",
   mounted() {
@@ -14,6 +16,8 @@ export default {
 </script>
 
 <style>
+
+
 body {
   text-align: -webkit-center;
   color: black;

@@ -1,10 +1,4 @@
 <template>
-  <!-- <div class="select">
-    <select class="language" name="Languages" title="Languages">
-      <option style="background-image:url(assets/img/add-circle-outline.svg)" title="Vietnam" name="Vietnam" value="langVN"><span>Việt nam</span></option>
-      <option style="background-image:url(assets/img/add-circle-outline.svg)" title="English" name="English" value="langEN"><span>English</span></option>
-    </select>
-  </div> -->
   <div class="table-responsive">
     <table id="info-cv" class="table table-primary">
       <tbody v-if="cvLoaded">
@@ -294,6 +288,10 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+table, tbody, tr, td, a {
+  color: black;
+  text-decoration: none;
+}
 .table-responsive {
   width: 862px;
   border-radius: 10px;
@@ -304,9 +302,10 @@
   background-color: white;
 }
 
-.table {
+.table>:not(caption)>*>* {
   border: 1px;
   background-color: white;
+  padding: unset;
 }
 
 .avt {
@@ -435,4 +434,3 @@ a:active {
   margin-bottom: 0px;
 }
 </style>
-./tqtoan_cv.vue/index.js./basic-template.js./basic-template.js
