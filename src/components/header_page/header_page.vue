@@ -40,6 +40,10 @@
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
+        <select class="form-select" name="lang" id="lang" title="Select language">
+          <option value="en">EN</option>
+          <option value="vn">VN</option>
+        </select>
       </div>
     </div>
   </nav>
@@ -48,6 +52,11 @@
 <script src="./header_page.js"></script>
 
 <style>
+.form-select {
+  width: 70px;
+  margin-left: 10px;
+}
+
 .cv-link {
   text-decoration: unset;
   color: black;
@@ -64,12 +73,12 @@ img.logo {
   box-shadow: 0 0 10px rgb(163 156 152);
 }
 
-a.logo{
+a.logo {
   padding-top: unset;
   padding-bottom: unset;
 }
 
-nav{
+nav {
   background-image: unset;
 }
 </style>./header_page.js./header_page.js
