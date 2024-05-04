@@ -9,7 +9,7 @@
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner">
+            <div class="carousel-inner" style="border-radius: 1em / 1em;">
                 <div class="carousel-item active" data-bs-interval="10000">
                     <img src="../../assets/img/carousel1.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
@@ -118,6 +118,7 @@
     img {
         height: 300px;
         width: 200px;
+        border-radius: 1em / 1em;
     }
 }
 
