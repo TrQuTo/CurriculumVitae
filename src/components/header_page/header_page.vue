@@ -38,13 +38,12 @@
             </ul>
           </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-        <select @change="saveLocaleToStorage" style="text-transform: uppercase;" v-model="$i18n.locale" class="form-select" name="lang" id="locale" title="Select language">
+        <select @change="saveLocaleToStorage" style="text-transform: uppercase;" v-model="$i18n.locale"
+          class="form-select me-2" name="lang" id="locale" title="Select language">
           <option v-for="locale in $i18n.availableLocales" :key="locale" :value="locale">{{ locale }}</option>
         </select>
+        <button class="btn btn-success me-2" @click="open = true">Login</button>
+        <button class="btn btn-outline-dark me-2">Sign up</button>
       </div>
     </div>
   </nav>

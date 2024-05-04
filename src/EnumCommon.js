@@ -12,10 +12,10 @@ const LocaleStorageKey = "LocaleStorageKey";
 
 const ComponentsName = {
   BASIC_TEMPLATE: "basic_template",
-  MODERN_TEMPLATE: "education_template",
-  FOOTER_PAGE: "skills_template",
-  HEADER_PAGE: "projects_template",
-  MAIN_CONTENT: "experience_template",
+  MODERN_TEMPLATE: "modern_template",
+  FOOTER_PAGE: "footer_page",
+  HEADER_PAGE: "header_page",
+  MAIN_CONTENT: "main_content",
   NOT_FOUND: "not_found",
 };
 export default {
