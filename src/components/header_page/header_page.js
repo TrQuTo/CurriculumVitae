@@ -14,5 +14,10 @@ export default {
       // Nếu có, gán giá trị locale cho biến được liên kết với v-model
       this.$i18n.locale = storedLocale;
     }
-  }
+  },
+  data() {
+    return {
+      IsLogin: true
+    }
+  },
 };
