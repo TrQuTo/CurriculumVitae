@@ -1,6 +1,9 @@
 {
-    "objective": "Mục tiêu",
-    "work-experience": "Kinh nghiệm",
-    "education": "Học vấn",
-    "skills": "Kỹ năng"
+  "header_page": {
+    "home": "Trang chủ"
+  },
+  "objective": "Mục tiêu",
+  "work-experience": "Kinh nghiệm",
+  "education": "Học vấn",
+  "skills": "Kỹ năng"
 }

@@ -1,6 +1,6 @@
-
+import EnumCommon from "@/EnumCommon";
 export default {
-    name: "basic_template",
+    name: EnumCommon.ComponentsName.BASIC_TEMPLATE,
     el: "#info-cv",
     data() {
       return {

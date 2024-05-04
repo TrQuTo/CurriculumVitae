@@ -9,7 +9,9 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <a class="nav-link">
+              <RouterLink class="cv-link" to="/">{{ $t("header_page.home") }}</RouterLink>
+            </a>
           </li>
           <li class="nav-item">
             <a class="nav-link">
@@ -40,9 +42,8 @@
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
-        <select class="form-select" name="lang" id="lang" title="Select language">
-          <option value="en">EN</option>
-          <option value="vn">VN</option>
+        <select @change="saveLocaleToStorage" style="text-transform: uppercase;" v-model="$i18n.locale" class="form-select" name="lang" id="locale" title="Select language">
+          <option v-for="locale in $i18n.availableLocales" :key="locale" :value="locale">{{ locale }}</option>
         </select>
       </div>
     </div>

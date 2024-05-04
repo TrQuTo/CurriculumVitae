@@ -3,8 +3,10 @@
         Modern Template
     </div>
 </template>
+
 <script>
-    export default {
-        name: 'modern_template'
-    }
+import EnumCommon from '@/EnumCommon';
+export default {
+    name: EnumCommon.ComponentsName.MODERN_TEMPLATE
+}
 </script>

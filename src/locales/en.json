@@ -1,4 +1,7 @@
 {
+    "header_page": {
+        "home": "Home"
+      },
     "objective": "Objective",
     "work-experience": "Work Expreience",
     "education": "Education",
