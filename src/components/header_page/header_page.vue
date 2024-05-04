@@ -42,8 +42,98 @@
           class="form-select me-2" name="lang" id="locale" title="Select language">
           <option v-for="locale in $i18n.availableLocales" :key="locale" :value="locale">{{ locale }}</option>
         </select>
-        <button class="btn btn-success me-2" @click="open = true">Login</button>
-        <button class="btn btn-outline-dark me-2">Sign up</button>
+        <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#LoginModal">{{
+                $t("header_page.btnLogin") }}</button>
+        <button class="btn btn-outline-dark me-2" data-bs-toggle="modal" data-bs-target="#SigninModal">{{
+                $t("header_page.btnSignUp") }}</button>
+        <!--Login Modal -->
+        <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="SigninModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content w-75">
+              <div class="modal-body p-4">
+                <table class="w-100">
+                  <tr class="text-center">
+                    <td>
+                      <h1 class="fw-bold">{{ $t("header_page.lblLogin") }}</h1>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label" for="username">{{ $t("header_page.lblUsername") }}</label>
+                      <div class="input-group mb-2">
+                        <span class="input-group-text" id="username"><img style="width: 15px;"
+                            src="../../assets/img/user-alt-1-svgrepo-com.svg" alt="icon password"></span>
+                        <input type="text" class="form-control" :placeholder="$t('header_page.plhEnterUsername')"
+                          aria-label="Username" aria-describedby="username">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="password">{{ $t("header_page.lblPassword") }}</label>
+                      <div class="input-group mb-1">
+                        <span class="input-group-text" id="password"><img src="../../assets/img/icons8-password.svg"
+                            alt="icon password"></span>
+                        <input type="password" class="form-control" :placeholder="$t('header_page.plhEnterPassword')"
+                          aria-describedby="password">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="text-end">
+                    <td>
+                      <p>{{ $t("header_page.lblForgetPassword") }}</p>
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="pb-3">
+                      <button type="button" class="btn btn-primary w-100">{{ $t("header_page.btnLogin") }}</button>
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      <p class="mb-2">{{ $t("header_page.txtOrSignUpUsing") }}</p>
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="pb-5">
+                      <img class="ps-1 pe-1" src="@/assets/img/icons8-facebook.svg" alt="Icon Login Facebook">
+                      <img class="ps-1 pe-1" src="@/assets/img/icons8-google.svg" alt="Icon Login Google">
+                      <img class="ps-1 pe-1" src="@/assets/img/icons8-linkedin.svg" alt="Icon Login Link In">
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      <p class="mb-1">{{ $t("header_page.txtHaveNotAccountYet") }}</p>
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      <button type="button" class="btn text-uppercase">{{ $t("header_page.btnSignUp") }}</button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Sign in Modal -->
+        <div class="modal fade" id="SigninModal" tabindex="-1" aria-labelledby="SigninModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="SigninModalLabel">Sign in</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </nav>

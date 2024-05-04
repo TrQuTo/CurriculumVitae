@@ -1,6 +1,26 @@
 {
     "header_page": {
-        "home": "Home"
+        "home": "Home",
+        "btnLogin": "Login",
+        "btnSignIn": "Sign in",
+        "btnSignUp": "Sign up",
+        "lblUsername": "Username",
+        "lblPassword": "Password",
+        "lblRememberMe": "Remember me",
+        "lblConfirmPassword": "Confirm Password",
+        "lblLogin": "Login",
+        "lblSignin": "Sign in",
+        "lblSignout": "Sign out",
+        "lblRegister": "Register",
+        "lblForgetPassword": "Forget password",
+        "txtOrSignUpUsing": "Or Sign Up Using",
+        "txtHaveNotAccountYet": "Have not account yet ?",
+        "plhEnterUsername": "Enter Username",
+        "plhEnterPassword": "Enter Password",
+        "plhEnterConfirmPassword": "Enter Confirm Password",
+        "plhEnterEmail": "Enter Email",
+        "plhEnterFullName": "Enter Full Name",
+        "plhEnterPhone": "Enter Phone"
       },
     "objective": "Objective",
     "work-experience": "Work Expreience",

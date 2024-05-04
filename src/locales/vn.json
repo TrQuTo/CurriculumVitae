@@ -1,6 +1,26 @@
 {
   "header_page": {
-    "home": "Trang chủ"
+    "home": "Trang chủ",
+    "btnLogin": "Đăng nhập",
+    "btnSignIn": "Đăng nhập",
+    "btnSignUp": "Đăng ký",
+    "lblUsername": "Tên người dùng",
+    "lblPassword": "Mật khẩu",
+    "lblRememberMe": "Nhớ mật khẩu",
+    "lblConfirmPassword": "Xác nhận mật khẩu",
+    "lblLogin": "Đăng nhập",
+    "lblSignin": "Đăng nhập",
+    "lblSignout": "Đăng xuất",
+    "lblRegister": "Đăng ký",
+    "lblForgetPassword": "Quên mật khẩu",
+    "txtOrSignUpUsing": "Hoặc đăng ký sử dụng",
+    "txtHaveNotAccountYet": "Bạn không có tài khoản ?",
+    "plhEnterUsername": "Nhập tên người dùng",
+    "plhEnterPassword": "Nhập mật khẩu",
+    "plhEnterConfirmPassword": "Nhập xác nhận mật khẩu",
+    "plhEnterEmail": "Nhập email",
+    "plhEnterFullName": "Nhập tên đầy đủ",
+    "plhEnterPhone": "Nhập số điện thoại"
   },
   "objective": "Mục tiêu",
   "work-experience": "Kinh nghiệm",
