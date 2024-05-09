@@ -48,13 +48,14 @@
           data-bs-target="#SignUpModal">{{
                 $t("header_page.btnSignUp") }}</button>
         <div v-if="IsLogin" class="dropdown">
-          <button class="btn btn-outline-secondary border border-lightgray; dropdown-toggle pt-0 pb-0 ps-1" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          <img class="avt-account" src="../../assets/img/user-circle-svgrepo-com.svg" alt="Avatar Account">
+          <button class="btn btn-outline-secondary border border-lightgray; dropdown-toggle pt-0 pb-0 ps-1"
+            type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <img class="avt-account" src="../../assets/img/user-circle-svgrepo-com.svg" alt="Avatar Account">
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">{{ $t("header_page.lblYourProfile") }}</a><span></span></li>
-            <li><a class="dropdown-item" href="#">{{ $t("header_page.lblSetting") }}</a></li>
-            <li><a class="dropdown-item" href="#">{{ $t("header_page.lblSignOut") }}</a></li>
+            <li><a class="dropdown-item">{{ $t("header_page.lblYourProfile") }}</a><span></span></li>
+            <li><a class="dropdown-item">{{ $t("header_page.lblSetting") }}</a></li>
+            <li><a class="dropdown-item" @click="signOut()">{{ $t("header_page.lblSignOut") }}</a></li>
           </ul>
         </div>
         <!--Login Modal -->
@@ -62,67 +63,75 @@
           <div class="modal-dialog">
             <div class="modal-content w-75">
               <div class="modal-body p-4">
-                <table class="w-100">
-                  <tr class="text-center">
-                    <td>
-                      <h1 class="fw-bold">{{ $t("header_page.lblLogin") }}</h1>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <label class="form-label" for="username">{{ $t("header_page.lblUsername") }}</label>
-                      <div class="input-group mb-2">
-                        <span class="input-group-text" id="username"><img style="width: 15px;"
-                            src="../../assets/img/user-alt-1-svgrepo-com.svg" alt="icon password"></span>
-                        <input type="text" class="form-control" :placeholder="$t('header_page.plhEnterUsername')"
-                          aria-label="Username" aria-describedby="username">
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <label class="form-label" for="password">{{ $t("header_page.lblPassword") }}</label>
-                      <div class="input-group mb-1">
-                        <span class="input-group-text" id="password"><img src="../../assets/img/icons8-password.svg"
-                            alt="icon password"></span>
-                        <input type="password" class="form-control" :placeholder="$t('header_page.plhEnterPassword')"
-                          aria-describedby="password">
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="text-end">
-                    <td>
-                      <p>{{ $t("header_page.lblForgetPassword") }}</p>
-                    </td>
-                  </tr>
-                  <tr class="text-center">
-                    <td class="pb-3">
-                      <button type="button" class="btn btn-primary w-100">{{ $t("header_page.btnLogin") }}</button>
-                    </td>
-                  </tr>
-                  <tr class="text-center">
-                    <td>
-                      <p class="mb-2">{{ $t("header_page.txtOrSignUpUsing") }}</p>
-                    </td>
-                  </tr>
-                  <tr class="text-center">
-                    <td class="pb-5">
-                      <img class="ps-1 pe-1" src="@/assets/img/icons8-facebook.svg" alt="Icon Login Facebook">
-                      <img class="ps-1 pe-1" src="@/assets/img/icons8-google.svg" alt="Icon Login Google">
-                      <img class="ps-1 pe-1" src="@/assets/img/icons8-linkedin.svg" alt="Icon Login Link In">
-                    </td>
-                  </tr>
-                  <tr class="text-center">
-                    <td>
-                      <p class="mb-1">{{ $t("header_page.txtHaveNotAccountYet") }}</p>
-                    </td>
-                  </tr>
-                  <tr class="text-center">
-                    <td>
-                      <button type="button" class="btn text-uppercase">{{ $t("header_page.btnSignUp") }}</button>
-                    </td>
-                  </tr>
-                </table>
+                <form class="row g-3 needs-validation" novalidate>
+                  <table class="w-100">
+                    <tr class="text-center">
+                      <td>
+                        <h1 class="fw-bold">{{ $t("header_page.lblLogin") }}</h1>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="form-label" for="username">{{ $t("header_page.lblUsername") }}</label>
+                        <div class="input-group mb-2">
+                          <span class="input-group-text" id="username"><img style="width: 15px;"
+                              src="../../assets/img/user-alt-1-svgrepo-com.svg" alt="icon password"></span>
+                          <input v-model="txtUsername" type="text" class="form-control" id="validationCustom02"
+                            :placeholder="$t('header_page.plhEnterUsername')" aria-label="Username"
+                            aria-describedby="username" required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="form-label" for="password">{{ $t("header_page.lblPassword") }}</label>
+                        <div class="input-group mb-1">
+                          <span class="input-group-text" id="password"><img src="../../assets/img/icons8-password.svg"
+                              alt="icon password"></span>
+                          <input v-model="txtPassword" type="password" class="form-control"
+                            :placeholder="$t('header_page.plhEnterPassword')" aria-describedby="password">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="text-end">
+                      <td>
+                        <p>{{ $t("header_page.lblForgetPassword") }}</p>
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <td class="pb-3">
+                        <button @click="login()" type="submit" class="btn btn-primary w-100">{{
+                $t("header_page.btnLogin")
+              }}</button>
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>
+                        <p class="mb-2">{{ $t("header_page.txtOrSignUpUsing") }}</p>
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <td class="pb-5">
+                        <img class="ps-1 pe-1" src="@/assets/img/icons8-facebook.svg" alt="Icon Login Facebook">
+                        <img class="ps-1 pe-1" src="@/assets/img/icons8-google.svg" alt="Icon Login Google">
+                        <img class="ps-1 pe-1" src="@/assets/img/icons8-linkedin.svg" alt="Icon Login Link In">
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>
+                        <p class="mb-1">{{ $t("header_page.txtHaveNotAccountYet") }}</p>
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>
+                        <button type="button" class="btn text-uppercase">{{ $t("header_page.btnSignUp") }}</button>
+                      </td>
+                    </tr>
+                  </table>
+                </form>
               </div>
             </div>
           </div>
@@ -178,7 +187,7 @@
                       <div class="input-group mb-1">
                         <span class="input-group-text" id="confirmpassword"><img
                             src="../../assets/img/icons8-password.svg" alt="icon password"></span>
-                        <input type="confirmpassword" class="form-control"
+                        <input type="password" class="form-control"
                           :placeholder="$t('header_page.plhEnterConfirmPassword')" aria-describedby="confirmpassword">
                       </div>
                     </td>

@@ -13,22 +13,22 @@
                 <div class="carousel-item active" data-bs-interval="10000">
                     <img src="../../assets/img/carousel1.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <h5>{{ $t("main_content.titleSlide1") }}</h5>
+                        <p>{{ $t("main_content.contentSlide1") }}</p>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
                     <img src="../../assets/img/carousel2.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
+                        <h5>{{ $t("main_content.titleSlide2") }}</h5>
+                        <p>{{ $t("main_content.contentSlide2") }}</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="../../assets/img/carousel3.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
+                        <h5>{{ $t("main_content.titleSlide3") }}</h5>
+                        <p>{{ $t("main_content.contentSlide3") }}</p>
                     </div>
                 </div>
             </div>

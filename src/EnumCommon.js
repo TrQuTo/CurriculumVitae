@@ -18,9 +18,15 @@ const ComponentsName = {
   MAIN_CONTENT: "main_content",
   NOT_FOUND: "not_found",
 };
+
+const IsLogin = {
+  TRUE: true,
+  FALSE: false,
+}
 export default {
   LocaleLanguage,
   LocaleStorageKey,
   Locale,
   ComponentsName,
+  IsLogin,
 };

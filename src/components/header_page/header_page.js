@@ -5,6 +5,17 @@ export default {
     saveLocaleToStorage() {
       // Lưu giá trị locale vào localStorage với khóa 'locale'
       localStorage.setItem(EnumCommon.LocaleStorageKey, this.$i18n.locale);
+    },
+    login(){
+      if(this.txtUsername == 'Admin' && this.txtPassword =='Admin@123'){
+        this.IsLogin = EnumCommon.IsLogin.TRUE;
+      }
+    },
+    signOut(){
+      this.IsLogin = EnumCommon.IsLogin.FALSE;
+    },
+    signUp(){
+      alert("Đăng ký thành công")
     }
   },
   mounted() {
@@ -17,7 +28,9 @@ export default {
   },
   data() {
     return {
-      IsLogin: true
+      IsLogin: this.IsLogin,
+      txtUsername: "",
+      txtPassword: "",
     }
-  },
+  }
 };

@@ -12,7 +12,7 @@ import header_page from "./components/header_page/header_page.vue";
 export default {
   name: "App",
   mounted() {
-    document.title = "CurriculumVitea";
+    document.title = "CurriculumVitae";
   },
   components: {
     header_page,
