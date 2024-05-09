@@ -1,4 +1,4 @@
-# mycv
+# CurriculmVitae
 
 ## Project setup
 ```
