@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="pb-2">
     <header_page/>
     <RouterView/>
   </main>

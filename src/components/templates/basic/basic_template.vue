@@ -1,5 +1,5 @@
 <template>
-  <div class="table-responsive">
+  <div class="table-responsive" style="margin-top: 75px;">
     <table id="info-cv" class="table table-primary">
       <tbody v-if="cvLoaded">
         <tr class="name-candidate">

@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
       <a class="navbar-brand logo" href="/"><img src="@/assets/img/logo_cv.png" class="logo" alt="Logo CV"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -135,7 +135,7 @@
                     <td class="pb-3">
                       <button @click="login()" class="btn btn-primary w-100">{{
                         $t("header_page.btnLogin")
-                        }}</button>
+                      }}</button>
                     </td>
                   </tr>
                   <tr class="text-center">
@@ -262,6 +262,13 @@
 <script src="./header_page.js"></script>
 
 <style>
+.modal {
+  z-index: 10;
+}
+
+.modal-backdrop {
+  z-index: 10;
+}
 .avt-account {
   border-radius: 50%;
   width: 35px;
@@ -297,5 +304,12 @@ a.logo {
 
 nav {
   background-image: unset;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 7px rgb(163 156 152);
 }
 </style>./header_page.js./header_page.js

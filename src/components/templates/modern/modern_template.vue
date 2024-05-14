@@ -1,6 +1,6 @@
 <template>
     <div>
-        Modern Template is updating
+        {{ $t("txtFeatureSoon") }}
     </div>
 </template>
 
