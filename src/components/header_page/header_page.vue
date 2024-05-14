@@ -262,13 +262,6 @@
 <script src="./header_page.js"></script>
 
 <style>
-.modal {
-  z-index: 10;
-}
-
-.modal-backdrop {
-  z-index: 10;
-}
 .avt-account {
   border-radius: 50%;
   width: 35px;
@@ -307,7 +300,7 @@ nav {
   position: fixed !important;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 1;
   width: 100%;
   background-color: white;
   box-shadow: 0 0 7px rgb(163 156 152);
