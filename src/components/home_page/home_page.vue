@@ -104,11 +104,71 @@
                     </div>
                 </div>
             </div>
+            <div class="col">
+                <div class="card">
+                    <img src="@/assets/img/logo_cv.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Basic</h5>
+                        <p class="card-text">
+                            <span class="badge bg-secondary">Professional</span>
+                            <span class="badge bg-secondary">Simple</span>
+                            <span class="badge bg-dark">+2</span>
+                        </p>
+                        <button class="btn btn-outline-primary">View Demo</button>
+                        <button class="btn btn-outline-success">Using This</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="@/assets/img/logo_cv.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Basic</h5>
+                        <p class="card-text">
+                            <span class="badge bg-secondary">Technology</span>
+                            <span class="badge bg-secondary">Modern</span>
+                            <span class="badge bg-dark">+4</span>
+                        </p>
+                        <button class="btn btn-outline-primary">View Demo</button>
+                        <button class="btn btn-outline-success">Using This</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="@/assets/img/logo_cv.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Basic</h5>
+                        <p class="card-text">
+                            <span class="badge bg-secondary">Professional</span>
+                            <span class="badge bg-secondary">Technology</span>
+                            <span class="badge bg-dark">+1</span>
+                        </p>
+                        <button class="btn btn-outline-primary">View Demo</button>
+                        <button class="btn btn-outline-success">Using This</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="@/assets/img/logo_cv.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Basic</h5>
+                        <p class="card-text">
+                            <span class="badge bg-secondary">Modern</span>
+                            <span class="badge bg-secondary">Simple</span>
+                            <span class="badge bg-dark">+7</span>
+                        </p>
+                        <button class="btn btn-outline-primary">View Demo</button>
+                        <button class="btn btn-outline-success">Using This</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
 
-<script src="./main_content.js">
+<script src="./home_page.js">
 </script>
 
 <style scoped>

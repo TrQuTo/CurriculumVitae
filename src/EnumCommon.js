@@ -11,11 +11,14 @@ const Locale = {
 const LocaleStorageKey = "LocaleStorageKey";
 
 const ComponentsName = {
+  HOME_PAGE: "home_page",
+  TEMPLATES_PAGE: "templates_page",
+  JOBS_PAGE: "jobs_page",
+  COMPANIES_PAGE: "companies_page",
   BASIC_TEMPLATE: "basic_template",
   MODERN_TEMPLATE: "modern_template",
   FOOTER_PAGE: "footer_page",
   HEADER_PAGE: "header_page",
-  MAIN_CONTENT: "main_content",
   NOT_FOUND: "not_found",
 };
 

@@ -1,9 +1,22 @@
 {
   "header_page": {
     "home": "Trang chủ",
+    "templates": "Mẫu hồ sơ",
+    "jobs": "Công việc",
+    "companies": "Công ty",
+    "tools": "Công cụ",
+    "other": "Khác",
+    "CalculatePersonalIncomeTax": "Tính thuế thu nhập cá nhân",
+    "GROSSSalaryCalculateNET": "Tính lương GROSS - NET",
+    "CalculateUnemploymentInsurance": "Tính bảo hiểm thất  nghiệp",
+    "CalculateOneTimeSocialInsurance": "Tính bảo hiểm xã hội một lần",
+    "resume": "Tóm tắt",
+    "UpdateProfile": "Cập nhập hồ sơ",
+
     "btnLogin": "Đăng nhập",
     "btnSignIn": "Đăng nhập",
     "btnSignUp": "Đăng ký",
+
     "lblEmail": "Email",
     "lblUsername": "Tên người dùng",
     "lblPassword": "Mật khẩu",
@@ -17,9 +30,11 @@
     "lblForgetPassword": "Quên mật khẩu",
     "lblYourProfile": "Hồ sơ của bạn",
     "lblSetting": "Cài đặt",
+
     "txtOrSignUpUsing": "Hoặc đăng ký bằng",
     "txtHaveNotAccountYet": "Bạn không có tài khoản ?",
     "txtHaveAnAccountYet": "Bạn đã có tài khoản ?",
+
     "plhEnterUsername": "Nhập tên người dùng",
     "plhEnterPassword": "Nhập mật khẩu",
     "plhEnterConfirmPassword": "Nhập xác nhận mật khẩu",
@@ -27,13 +42,27 @@
     "plhEnterFullName": "Nhập tên đầy đủ",
     "plhEnterPhone": "Nhập số điện thoại"
   },
-  "main_content": {
+  "templates_page": {
     "titleSlide1": "100+ mẫu CV",
     "titleSlide2": "Mẫu CV hiện đại và chuyên nghiệp",
     "titleSlide3": "Tạo CV đơn giản và hiện đại",
+
     "contentSlide1": "Nhiều mẫu để lựa chọn và được cập nhật thường xuyên.",
     "contentSlide2": "Mẫu CV hiện đại, thân thiện và ứng tượng với nhà tuyển dụng.",
-    "contentSlide3": "Tạo hồ sơ đơn giản và dễ dàng."
+    "contentSlide3": "Tạo hồ sơ đơn giản và dễ dàng.",
+
+    "btnPrevious": "Trước",
+    "btnNext": "Sau",
+    "btnViewDemo": "Xem thử",
+    "btnUsingThis": "Sử dụng",
+
+    "cardTitleBasic": "Cơ bản",
+    "cardTitleModern": "Hiện đại",
+
+    "cardHashtagProfessional": "Chuyên nghiệp",
+    "cardHashtagSimple": "Đơn giản",
+    "cardHashtagTechnology": "Công nghệ",
+    "cardHashtagModern": "Hiện đại"
   },
   "objective": "Mục tiêu",
   "work-experience": "Kinh nghiệm",

@@ -1,6 +1,6 @@
 <template>
     <div>
-        Modern Template
+        Modern Template is updating
     </div>
 </template>
 

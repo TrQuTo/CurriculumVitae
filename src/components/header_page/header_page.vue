@@ -7,7 +7,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-5">
           <li class="nav-item">
             <a class="nav-link">
               <RouterLink class="cv-link" to="/">{{ $t("header_page.home") }}</RouterLink>
@@ -15,38 +15,69 @@
           </li>
           <li class="nav-item">
             <a class="nav-link">
-              <RouterLink class="cv-link" to="/basic_template">Basic Template</RouterLink>
+              <RouterLink class="cv-link" to="/templates">{{ $t("header_page.templates") }}</RouterLink>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link">
-              <RouterLink class="cv-link" to="/modern_template">Modern Template</RouterLink>
+              <RouterLink class="cv-link" to="/jobs">{{ $t("header_page.jobs") }}</RouterLink>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              <RouterLink class="cv-link" to="/companies">{{ $t("header_page.companies") }}</RouterLink>
             </a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
-              Order
+              {{ $t("header_page.tools") }}
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">{{ $t("header_page.CalculatePersonalIncomeTax") }}</a></li>
+              <li><a class="dropdown-item" href="#">{{ $t("header_page.GROSSSalaryCalculateNET") }}</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">{{ $t("header_page.CalculateUnemploymentInsurance") }}</a></li>
+              <li><a class="dropdown-item" href="#">{{ $t("header_page.CalculateOneTimeSocialInsurance") }}</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              {{ $t("header_page.other") }}
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">{{ $t("header_page.resume") }}</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">{{ $t("header_page.UpdateProfile") }}</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
             </ul>
           </li>
         </ul>
         <select @change="saveLocaleToStorage" style="text-transform: uppercase;" v-model="$i18n.locale"
-          class="form-select me-2" name="lang" id="locale" title="Select language">
+          class="form-select me-2 rounded" name="lang" id="locale" title="Select language">
           <option v-for="locale in $i18n.availableLocales" :key="locale" :value="locale">{{ locale }}</option>
         </select>
         <button v-if="!IsLogin" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#LoginModal">{{
-                $t("header_page.btnLogin") }}</button>
+          $t("header_page.btnLogin") }}</button>
         <button v-if="!IsLogin" class="btn btn-outline-dark me-2" data-bs-toggle="modal"
           data-bs-target="#SignUpModal">{{
-                $t("header_page.btnSignUp") }}</button>
+            $t("header_page.btnSignUp") }}</button>
         <div v-if="IsLogin" class="dropdown">
           <button class="btn btn-outline-secondary border border-lightgray; dropdown-toggle pt-0 pb-0 ps-1"
             type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -63,75 +94,73 @@
           <div class="modal-dialog">
             <div class="modal-content w-75">
               <div class="modal-body p-4">
-                <form class="row g-3 needs-validation" novalidate>
-                  <table class="w-100">
-                    <tr class="text-center">
-                      <td>
-                        <h1 class="fw-bold">{{ $t("header_page.lblLogin") }}</h1>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label class="form-label" for="username">{{ $t("header_page.lblUsername") }}</label>
-                        <div class="input-group mb-2">
-                          <span class="input-group-text" id="username"><img style="width: 15px;"
-                              src="../../assets/img/user-alt-1-svgrepo-com.svg" alt="icon password"></span>
-                          <input v-model="txtUsername" type="text" class="form-control" id="validationCustom02"
-                            :placeholder="$t('header_page.plhEnterUsername')" aria-label="Username"
-                            aria-describedby="username" required>
-                          <div class="valid-feedback">
-                            Looks good!
-                          </div>
+                <table class="w-100">
+                  <tr class="text-center">
+                    <td>
+                      <h1 class="fw-bold">{{ $t("header_page.lblLogin") }}</h1>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label" for="username">{{ $t("header_page.lblUsername") }}</label>
+                      <div class="input-group mb-2">
+                        <span class="input-group-text" id="username"><img style="width: 15px;"
+                            src="../../assets/img/user-alt-1-svgrepo-com.svg" alt="icon password"></span>
+                        <input v-model="txtUsername" type="text" class="form-control" id="validationCustom02"
+                          :placeholder="$t('header_page.plhEnterUsername')" aria-label="Username"
+                          aria-describedby="username" required>
+                        <div class="valid-feedback">
+                          Looks good!
                         </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label class="form-label" for="password">{{ $t("header_page.lblPassword") }}</label>
-                        <div class="input-group mb-1">
-                          <span class="input-group-text" id="password"><img src="../../assets/img/icons8-password.svg"
-                              alt="icon password"></span>
-                          <input v-model="txtPassword" type="password" class="form-control"
-                            :placeholder="$t('header_page.plhEnterPassword')" aria-describedby="password">
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class="text-end">
-                      <td>
-                        <p>{{ $t("header_page.lblForgetPassword") }}</p>
-                      </td>
-                    </tr>
-                    <tr class="text-center">
-                      <td class="pb-3">
-                        <button @click="login()" type="submit" class="btn btn-primary w-100">{{
-                $t("header_page.btnLogin")
-              }}</button>
-                      </td>
-                    </tr>
-                    <tr class="text-center">
-                      <td>
-                        <p class="mb-2">{{ $t("header_page.txtOrSignUpUsing") }}</p>
-                      </td>
-                    </tr>
-                    <tr class="text-center">
-                      <td class="pb-5">
-                        <img class="ps-1 pe-1" src="@/assets/img/icons8-facebook.svg" alt="Icon Login Facebook">
-                        <img class="ps-1 pe-1" src="@/assets/img/icons8-google.svg" alt="Icon Login Google">
-                        <img class="ps-1 pe-1" src="@/assets/img/icons8-linkedin.svg" alt="Icon Login Link In">
-                      </td>
-                    </tr>
-                    <tr class="text-center">
-                      <td>
-                        <p class="mb-1">{{ $t("header_page.txtHaveNotAccountYet") }}</p>
-                      </td>
-                    </tr>
-                    <tr class="text-center">
-                      <td>
-                        <button type="button" class="btn text-uppercase">{{ $t("header_page.btnSignUp") }}</button>
-                      </td>
-                    </tr>
-                  </table>
-                </form>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label" for="password">{{ $t("header_page.lblPassword") }}</label>
+                      <div class="input-group mb-1">
+                        <span class="input-group-text" id="password"><img src="../../assets/img/icons8-password.svg"
+                            alt="icon password"></span>
+                        <input v-model="txtPassword" type="password" class="form-control"
+                          :placeholder="$t('header_page.plhEnterPassword')" aria-describedby="password">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="text-end">
+                    <td>
+                      <p>{{ $t("header_page.lblForgetPassword") }}</p>
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="pb-3">
+                      <button @click="login()" class="btn btn-primary w-100">{{
+                        $t("header_page.btnLogin")
+                        }}</button>
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      <p class="mb-2">{{ $t("header_page.txtOrSignUpUsing") }}</p>
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="pb-5">
+                      <img class="ps-1 pe-1" src="@/assets/img/icons8-facebook.svg" alt="Icon Login Facebook">
+                      <img class="ps-1 pe-1" src="@/assets/img/icons8-google.svg" alt="Icon Login Google">
+                      <img class="ps-1 pe-1" src="@/assets/img/icons8-linkedin.svg" alt="Icon Login Link In">
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      <p class="mb-1">{{ $t("header_page.txtHaveNotAccountYet") }}</p>
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      <button type="button" class="btn text-uppercase">{{ $t("header_page.btnSignUp") }}</button>
+                    </td>
+                  </tr>
+                </table>
               </div>
             </div>
           </div>
@@ -237,6 +266,7 @@
   border-radius: 50%;
   width: 35px;
   height: 35px;
+  padding: 2px;
 }
 
 .form-select {
